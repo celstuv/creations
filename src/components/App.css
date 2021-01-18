@@ -1,0 +1,61 @@
+/* Produit réalisé par Céline
+  création le 13/01/21
+  Projet d'apprentissage
+*/
+
+/* Général */
+h1 {
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+}
+/* navigation */
+img {
+  width : 20%;
+}
+
+.menu li {
+  list-style-type: inherit;
+  list-style-type: none;
+}
+
+/* Slider */
+.container-articles {
+  background-color: cyan;
+}
+
+.container-footer {
+  background-color: lightgoldenrodyellow;
+}
+
+.slider h3 {
+    color:black;
+}
+.slider p {
+    color:black;
+}
+
+/* Phrase */
+.alert {
+  text-align: center;
+}
+
+.alert p {
+  font-size: 1.15em;
+  text-align: center;
+}
+
+
+/* Commandes*/
+.commandes{
+  margin: 20px 0px 50px;
+}
+.card {
+  -webkit-box-shadow: 5px 5px 5px 5px #ADADAD;
+  box-shadow: 5px 5px 5px 5px #ADADAD;
+}
+.card img{
+  align-items: center;
+}
