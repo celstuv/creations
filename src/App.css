@@ -4,7 +4,7 @@
 */
 
 /* Général */
-h1 {
+h1, h6 {
   text-align: center;
 }
 
@@ -26,7 +26,7 @@ img {
   background-color: cyan;
 }
 
-.container-footer {
+.container-Footer {
   background-color: lightgoldenrodyellow;
 }
 

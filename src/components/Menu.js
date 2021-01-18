@@ -16,9 +16,9 @@ const Menu = () => {
         </Navbar.Brand>
          <Nav className="mr-auto">
            <Nav.Link href="#home">Home</Nav.Link>
-           <Nav.Link href="#features">Savoir-Faire</Nav.Link>
-           <Nav.Link href="#features">Best-Sellers</Nav.Link>
-           <Nav.Link href="#pricing">Contact</Nav.Link>
+           <Nav.Link href="#savoirfaire">Savoir-Faire</Nav.Link>
+           <Nav.Link href="#bestsellers">Best-Sellers</Nav.Link>
+           <Nav.Link href="#contact">Contact</Nav.Link>
          </Nav>
          <Form inline>
            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
