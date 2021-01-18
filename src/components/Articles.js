@@ -23,7 +23,7 @@ class Articles extends Component {
           </div>
         </div>
         <hr />
-          <h2>Commandes réalisées</h2>
+          <h2>Top Ventes Hiver 2020</h2>
           <div className="row commandes">
             {
               this.state.ListeProduits.map((list, index) => {
