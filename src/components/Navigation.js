@@ -1,38 +1,39 @@
 import React from 'react';
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
 import logo from '../images/logo.jpg';
-import FormControl from 'react-bootstrap/FormControl'
 import { Link } from 'react-router-dom';
+import { links, social } from './Data';
+
+//Bootstrap
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import FormControl from 'react-bootstrap/FormControl';
 
 const Navigation = () => {
 
   return (
-    <div className="container-fluid my-3">
-      <ul style={{ display: 'flex', justifyContent: 'between' }}>
-        <Link to="/">
-          <li style={{ marginLeft: 5, listStyle: 'none' }}>
-            <img alt="logo_boutique" src={logo} className="d-inline-block align-top" />&#160;
-            <span>Lyline's Boutique</span>
-          </li>
-        </Link>
-        <Link to="/">
-          <li style={{ marginLeft: 10, listStyle: 'none' }}>Accueil</li>
-        </Link>
-        <Link to="savoirfaire">
-          <li style={{ marginLeft: 10, listStyle: 'none' }}>Savoir-Faire</li>
-        </Link>
-        <Link to="blog">
-          <li style={{ marginLeft: 10, listStyle: 'none' }}>Blog</li>
-        </Link>
-        <Link to="/contact">
-          <li style={{ marginLeft: 10, listStyle: 'none' }}>Contact</li>
-        </Link>
-      </ul>
-    </div>
+    <React.Fragment>
+      <div className="container">
+        <div classname="row">
+          <Navbar bg="transparent" variant="transparent">
+            <Navbar.Brand href="#home">
+              <img alt="logo_boutique" src={logo} className="d-inline-block align-top w-25" />
+              &#160; Lyline's Boutique
+            </Navbar.Brand>
+            <Nav className="mr-auto">
+                {links.map((link, index) => {
+                  const { id, url, text } = link;
+                  return (
+                    <Nav.Link key={id} href={url}>{text}</Nav.Link>
+                  );
+                })}
+            </Nav>
+          </Navbar>
+        </div>
+      </div>
+    </React.Fragment>
   );
-}
+};
 
 export default Navigation;
