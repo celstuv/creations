@@ -21,21 +21,21 @@ class Images extends Component {
       popImageUrl: '',
     };
 
-  imageSubmitter = (e) => {
-    e.preventDefault();
-    const imageUrlsArray = this.state.imgUrlArray;
-    imageUrlsArray.push(this.state.imageUrl)
-      this.setState({
-        imageUrlsArray: imageUrlsArray
-      });
-  }
-
-  handleLinkChange = (e) => {
-    e.preventDefault();
-    this.setState({
-      imageUrl: e.target.value
-    });
-  }
+  // imageSubmitter = (e) => {
+  //   e.preventDefault();
+  //   const imageUrlsArray = this.state.imgUrlArray;
+  //   imageUrlsArray.push(this.state.imageUrl)
+  //     this.setState({
+  //       imageUrlsArray: imageUrlsArray
+  //     });
+  // }
+  //
+  // handleLinkChange = (e) => {
+  //   e.preventDefault();
+  //   this.setState({
+  //     imageUrl: e.target.value
+  //   });
+  // }
 
   handlePopup = (url) => {
     this.setState({

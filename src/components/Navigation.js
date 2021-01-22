@@ -18,7 +18,7 @@ const Navigation = () => {
         <div classname="row">
           <Navbar bg="transparent" variant="transparent">
             <Navbar.Brand href="#home">
-              <img alt="logo_boutique" src={logo} className="d-inline-block align-top w-25" />
+              <img alt="logo_boutique" src={logo} className="d-inline-block align-top"  width="30"/>
               &#160; Lyline's Boutique
             </Navbar.Brand>
             <Nav className="mr-auto">
