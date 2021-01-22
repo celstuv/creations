@@ -6,9 +6,7 @@ import CardDeck from 'react-bootstrap/CardDeck'
 
 const Produits = ({ name, description, prix, imageSrc, imageAlt }) => {
 
-  // const prixProduit = prix ? (<p>Prix : {prix}</p>) : (<p>Prix : pas de prix</p>);
-
-  console.log(imageSrc);
+  //console.log(imageSrc);
 
   return (
     <CardDeck>

@@ -1,4 +1,6 @@
 import React from 'react';
+import Images from './Images';
+
 export const links = [
   {
     id: 1,
@@ -25,22 +27,22 @@ export const social = [
   {
     id: 1,
     url: 'https://www.facebook.com',
-    icon: <FaFacebook />,
+    //icon: <FaFacebook />,
   },
   {
     id: 2,
     url: 'https://www.twitter.com',
-    icon: <FaTwitter />,
+    //icon: <FaTwitter />,
   },
   {
     id: 3,
     url: 'https://www.linkedin.com',
-    icon: <FaLinkedin />,
+    //icon: <FaLinkedin />,
   },
   {
     id: 4,
     url: 'https://www.behance.net',
-    icon: <FaBehance />,
+    //icon: <FaBehance />,
   },
 ];
 export const gallery = [
@@ -72,4 +74,31 @@ export const gallery = [
     id: 7,
     url: 'https://images.unsplash.com/photo-1543334270-24bb46642afe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTh8fHdvb2x8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
   },
-]
+];
+
+export const ListeProduits = [
+  {
+    id: 1,
+    name: 'Snoods',
+    description: 'Boutonner ou enfiler, différents motifs',
+    prix: 35,
+    imageSrc: '../images/snood.jpg',
+    imageAlt: 'image_snood',
+  },
+  {
+    id: 2,
+    name: 'Mitaines',
+    description: 'Avec ou sans pouce',
+    prix: 20,
+    imageSrc: '../images/mitaine.jpg',
+    imageAlt: 'image_mitaine',
+  },
+  {
+    id: 3,
+    name: 'Plaids',
+    description: 'A partir 1 mètre',
+    prix: 70,
+    imageSrc: '../images/plaid.jpg',
+    imageAlt: 'image_snood',
+  },
+];

@@ -1,20 +1,11 @@
 import React, { Component } from 'react';
 import Produits from './Produits';
 import Images from './Images';
+import  { ListeProduits }  from './Data';
 
 
-class Articles extends Component {
+const Articles = () => {
 
-  state = {
-      ListeProduits: [
-        { name: 'Snoods', description: 'Boutonner ou enfiler, différents motifs', prix: 35, imageSrc: '../images/snood.jpg', imageAlt: 'image_snood'},
-        { name: 'Mitaines', description: 'Avec ou sans pouce', prix: 20, imageSrc: '../images/mitaine.jpg', imageAlt: 'image_mitaine' },
-        { name: 'Plaids', description: 'A partir 1 mètre', prix: 70, imageSrc: '../images/plaid.jpg', imageAlt: 'image_snood' },
-      ],
-    };
-
-
-  render() {
     return (
       <div className="container">
         <div className="row justify-content-md-center">
@@ -26,15 +17,17 @@ class Articles extends Component {
           <h2>Top Ventes Hiver 2020</h2>
           <div className="row commandes">
             {
-              this.state.ListeProduits.map((list, index) => {
+              ListeProduits.map((list, index) => {
+                const { name, image, imageSrc, imageAlt, description, prix } = list;
                 return (
-                  <div className="col" key={index} md={4}>
+                  <div className="col" key={ListeProduits.id} md={4}>
                     <Produits
-                      name={list.name}
-                      imageSrc={list.imageSrc}
-                      imageAlt={list.imageAlt}
-                      description={list.description}
-                      prix={list.prix}>{list.image}</Produits>
+                      name={name}
+                      imageSrc={imageSrc}
+                      imageAlt={imageAlt}
+                      description={description}
+                      prix={prix}>{image}
+                    </Produits>
                   </div>
               );
               })
@@ -44,7 +37,6 @@ class Articles extends Component {
       </div>
 
     );
-  }
 }
 
 export default Articles;
