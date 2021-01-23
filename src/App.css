@@ -13,7 +13,7 @@ hr {
 }
 /* navigation */
 img {
-  width : 15%;
+  width : 25%;
 }
 
 li {
@@ -22,13 +22,14 @@ li {
   font-size : 1.25em;
 }
 
+
 /* Slider */
 .container-articles {
   background-color: cyan;
 }
 
 .container-Footer {
-  background-color: lightgoldenrodyellow;
+  background-color: #fdbdbd;
 }
 
 .slider h3 {

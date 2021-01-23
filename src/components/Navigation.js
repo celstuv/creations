@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo.jpg';
+import logo from '../images/logo.png';
 import { Link } from 'react-router-dom';
 import { links, social } from './Data';
 
@@ -15,21 +15,23 @@ const Navigation = () => {
   return (
     <React.Fragment>
       <div className="container">
-        <div classname="row">
-          <Navbar bg="transparent" variant="transparent">
+        <div className="row no-gutters">
+          <div className="col-6 col-md-4">
             <Navbar.Brand href="#home">
-              <img alt="logo_boutique" src={logo} className="d-inline-block align-top"  width="30"/>
-              &#160; Lyline's Boutique
+              <img alt="logo" src={logo} className="d-inline-block align-top" />
+              <Navbar.Brand>&#160; Lyline's Boutique</Navbar.Brand>
             </Navbar.Brand>
-            <Nav className="mr-auto">
+          </div>
+          <div className="col-12 col-sm-6 col-md-8 justify-content-center">
+            <Nav style={{ fontSize: '1.25rem' }}>
                 {links.map((link, index) => {
                   const { id, url, text } = link;
                   return (
                     <Nav.Link key={id} href={url}>{text}</Nav.Link>
                   );
                 })}
-            </Nav>
-          </Navbar>
+              </Nav>
+          </div>
         </div>
       </div>
     </React.Fragment>

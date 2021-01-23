@@ -7,13 +7,12 @@ const Phrases = () => {
     <Alert variant="warning">
       <Alert.Heading>Bonjour, Bienvenue !</Alert.Heading>
       <p>
-        Découvrez notre savoir-faire et laissez-vous tenter.
+        Première boutique où l'on ne vend aucun article
       </p>
-      <hr />
       <p className="mb-0">
-        Commander un article entèrement personnalisé que vous ne pourrez trouver nulle part ailleurs.
+        Commandez votre article entièrement personnalisé que vous ne trouvez nulle part ailleurs.
       </p>
-  </Alert>
+    </Alert>
   );
 };
 export default Phrases;
