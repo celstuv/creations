@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Phrases from './Phrase';
 import Produits from './Produits';
-import Images from './Images';
-
-import  { ListeProduits }  from './Data';
-
+import Savoir from './Savoir';
+import Techniques from './Techniques';
 
 const Articles = () => {
 
@@ -15,7 +13,10 @@ const Articles = () => {
           <div className="col">
             <h2>Mon Savoir-Faire</h2>
             <hr />
-            <Images />
+            <Savoir />
+            <h2>Techniques maîtrisées</h2>
+            <hr />
+            <Techniques />
           </div>
         </div>
       </div>
@@ -32,22 +33,7 @@ const Articles = () => {
             <h2>Top Ventes Hiver 2020</h2>
             <hr />
               <div className="row commandes">
-                {
-                  ListeProduits.map((list, index) => {
-                    const { name, image, imageSrc, imageAlt, description, prix } = list;
-                    return (
-                      <div className="col" key={ListeProduits.id} md={4}>
-                        <Produits
-                          name={name}
-                          imageSrc={imageSrc}
-                          imageAlt={imageAlt}
-                          description={description}
-                          prix={prix}>{image}
-                        </Produits>
-                      </div>
-                  );
-                  })
-                }
+                <Produits />
             </div>
           </div>
         </div>

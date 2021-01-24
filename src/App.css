@@ -6,6 +6,7 @@
 /* Général */
 h1, h2, h6 {
   text-align: center;
+  background-color: cyan;
 }
 
 hr {
