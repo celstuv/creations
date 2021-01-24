@@ -47,7 +47,7 @@ export const ListeProduits = [
   {
     id: 1,
     name: 'Snoods',
-    description: 'Boutonner ou enfiler, différents motifs',
+    description: 'Boutonner ou enfiler',
     prix: 35,
     imageSrc: '../images/snood.jpg',
     imageAlt: 'image_snood',
@@ -73,6 +73,6 @@ export const ListeProduits = [
 export const BackgroundImage = [
   {
     id: 1,
-    url: 'https://cdn.pixabay.com/photo/2015/04/20/13/45/wool-731515_960_720.jpg',
+    url: 'https://images.unsplash.com/photo-1590069833002-35d9e7376cd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTQzfHx3b29sfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
   },
 ]

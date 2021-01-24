@@ -70,7 +70,6 @@ class Images extends Component {
         //   <button type="submit" className="submitButton">Submit Image</button>
         // </form>
       }
-        <h2>Notre savoir-faire</h2>
           <div className="Images">
             {images}
             {this.state.showModal ? (<Popup popImageUrl={this.state.popImageUrl} closePopup={this.handlePopup}/>) : null}
