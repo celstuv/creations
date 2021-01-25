@@ -2,29 +2,35 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
 import CardDeck from 'react-bootstrap/CardDeck'
+import  { ListeProduits }  from './Data';
 
+const Produits = () => {
 
-const Produits = ({ name, description, prix, imageSrc, imageAlt }) => {
-
-  // const prixProduit = prix ? (<p>Prix : {prix}</p>) : (<p>Prix : pas de prix</p>);
-
-  console.log(imageSrc);
+  //console.log(imageSrc);
 
   return (
-    <CardDeck>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={imageSrc} className="w-100" alt={imageAlt} />
-        <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <hr />
-          <Card.Text>
-            {description}
-          </Card.Text>
-          <Button variant="outline-secondary">{prix} €</Button>
-        </Card.Body>
-      </Card>
-    </CardDeck>
-
+      <React.Fragment>
+        {ListeProduits.map((list, index) => {
+          const { name, image, imageSrc, imageAlt, description, prix } = list;
+          return (
+            <div className="col" key={list.id} md={4}>
+              <CardDeck>
+                <Card style={{ width: '18rem' }}>
+                  <Card.Img variant="top" src={imageSrc} className="w-100" alt={imageAlt} />
+                  <Card.Body>
+                    <Card.Title>{name}</Card.Title>
+                    <hr />
+                    <Card.Text>
+                      {description}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </div>
+        );
+        })
+      }
+    </React.Fragment>
     );
 
 };

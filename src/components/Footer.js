@@ -1,40 +1,42 @@
 import React from 'react';
-import wool from '../images/wool.jpg';
-import rocknwool from '../images/rocknwool.jpg';
+import logo from '../images/logo.jpg';
+import { links, social } from './Data';
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container-Footer">
-        <div className="row">
-          <div className="col-lg-6 text-center">
-            <h6>Projet réalisé par Céline &#x1F604; - 2020</h6>
-            <img src={wool} alt="image_footer" />
-            <img src={rocknwool} alt="image_footer" />
+      <div className="container-Footer py-3">
+        <div className="row justify-content-center">
+          <div className="col-lg-3 col-md-5 text-center ml-1 email" style={{ backgroundColor: '' }}>
+              <Form.Control type="email" placeholder="Tapez votre email" />
+              <Button variant="primary" type="submit">Newsletter</Button>
           </div>
-          <div className="col-lg-6">
-            <div className="row">
-              <div className="col-lg-6">
-                <h6>Menu</h6>
-                  <ul>
-                    <li>Accueil</li>
-                    <li>Savoir-Faire</li>
-                    <li>Best-Sellers</li>
-                    <li>Contact</li>
-                  </ul>
-              </div>
-              <div className="col-lg-6">
-                <h6>Contacts</h6>
-                  <ul>
-                    <li><a href="https://www.facebook.com/boutiquedeLyline">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/lylineboutique/">Instagram</a></li>
-                  </ul>
-              </div>
+          <div className="col-lg-4" style={{ backgroundColor: ''}}>
+            <ul className="text-center">
+              {links.map((link, index) => {
+                const { id, url, text } = link;
+                return (
+                  <li key={id}><a href={url}>{text}</a></li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="col-lg-3" style={{ backgroundColor: ''}}>
+            <ul className="text-center">
+              {social.map((social, index) => {
+                const { id, url, icon, text } = social;
+                return (
+                  <li key={id}> <a href={url}>{icon}</a></li>
+                );
+              })}
+            </ul>
           </div>
         </div>
+        <hr />
+        <div class="footer-copyright text-center">© 2020 Copyright: Projet réalisé par Céline</div>
       </div>
-    </div>
-  </footer>
-  )
-}
+  );
+};
+
 export default Footer;
