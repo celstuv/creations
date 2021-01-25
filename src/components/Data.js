@@ -175,7 +175,7 @@ export const Commentaires = [
   },
 ];
 
-export const fourniseurs = [
+export const Fournisseurs = [
   {
     id: 1,
     name: 'Bergère de France',
@@ -184,7 +184,7 @@ export const fourniseurs = [
   {
     id: 2,
     name: 'Zeeman',
-    image: 'https://assets.stickpng.com/images/5a34013ef2aaf7518bd292c6.png',
+    image: 'https://www.lesalleesgestina.fr/wp-content/uploads/logo-zeeman.png',
   },
   {
     id: 3,

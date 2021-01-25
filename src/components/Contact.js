@@ -8,7 +8,7 @@ const Contact = () => {
     <React.Fragment>
       <div className="container my-5">
           <h1>Besoin d'informations ? Demande d'un devis ? <br /> Utilisez le formulaire ci-dessous : </h1>
-        <form className="my-5 py-5 pr-5 pl-5 border border-warning rounded mb-0">
+        <form className="my-5 py-5 pr-5 pl-5 border border-success rounded mb-0">
           <Form.Row>
             <div className="col-lg-6">
               <Form.Label>Nom : </Form.Label>
