@@ -11,9 +11,9 @@ const Savoir = () => {
       {
         SavoirImge.map((SavoirImges, index) => {
           const { id, url } = SavoirImges;
-          console.log(SavoirImges);
+          //console.log(SavoirImges);
         return (
-          <div key={SavoirImges.id}>
+          <div className="savoir" key={SavoirImges.id}>
           <CardDeck>
             <Card style={{ width: '20rem', marginLeft: '3rem', padding: '1.25rem'}}>
               <img src={url} alt="image_Savoir" className="w-100"/>

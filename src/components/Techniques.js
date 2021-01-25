@@ -12,13 +12,13 @@ const Techniques = () => {
       {
         Technique.map((Techniques, index) => {
           const { id, url } = Techniques;
-          console.log(Techniques);
+          //console.log(Techniques);
         return (
-          <div key={Techniques.id}>
-          <CardDeck>
-            <Card style={{ width: '20rem', marginLeft: '3rem', marginBottom: '3rem', padding: '1.25rem'}}>
-              <img src={url} alt="image_Savoir" className="w-100" />
-              </Card>
+          <div className="technique" key={Techniques.id}>
+            <CardDeck>
+              <Card style={{ width: '20rem', marginLeft: '3rem', marginBottom: '3rem', padding: '1.25rem'}}>
+                <img src={url} alt="image_Savoir" className="w-100" />
+                </Card>
             </CardDeck>
           </div>
         );

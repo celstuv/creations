@@ -2,11 +2,14 @@
   création le 13/01/21
   Projet d'apprentissage
 */
+* {
+
+}
 
 /* Général */
-h1, h2, h6 {
+h1, h2, h6, p {
   text-align: center;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 
 hr {
@@ -21,16 +24,25 @@ li {
   list-style-type: inherit;
   list-style-type: none;
   font-size : 1.25em;
+  display: inline;
+  margin-left: 2rem;
 }
 
-
-/* Slider */
+/* Footer */
 .container-articles {
   background-color: cyan;
 }
 
 .container-Footer {
-  background-color: #fdbdbd;
+  background-color: #a2bbff;
+}
+
+.email {
+  display: flex;
+}
+
+.container-Footer a {
+  color : white;
 }
 
 .slider h3 {
@@ -49,7 +61,6 @@ li {
   font-size: 1.15em;
   text-align: center;
 }
-
 
 /* Commandes*/
 .commandes{

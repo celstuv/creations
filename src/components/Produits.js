@@ -23,7 +23,6 @@ const Produits = () => {
                     <Card.Text>
                       {description}
                     </Card.Text>
-                    <Button variant="outline-secondary">{prix} €</Button>
                   </Card.Body>
                 </Card>
               </CardDeck>

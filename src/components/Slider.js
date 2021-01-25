@@ -7,7 +7,8 @@ import snood from '../images/wool.jpg';
 class Slider extends Component {
   render() {
     return(
-      <div className="slider">
+      <React.Fragment>
+      <div className="slider" style={{ width: "20rem" }}>
         <Carousel>
           <Carousel.Item interval={1000}>
             <img
@@ -44,6 +45,7 @@ class Slider extends Component {
           </Carousel.Item>
         </Carousel>
       </div>
+      </React.Fragment>
     );
   }
 }
